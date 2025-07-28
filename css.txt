@@ -1,0 +1,48 @@
+/* Personalizações extras */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Efeitos para botões */
+.btn-hover {
+    transition: all 0.3s ease;
+}
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.btn {
+    transition: all 0.3s;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.2);
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    /* Esconde o menu em desktop, mostra ícone de hambúrguer */
+    nav ul {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+}
